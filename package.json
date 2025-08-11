@@ -1,0 +1,42 @@
+{
+  "name": "thousandgap",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arti911/thousand-gap.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "keywords": [
+    "thousand separator",
+    "number formatting",
+    "digit grouping",
+    "customizable spacing",
+    "number readability",
+    "numeric formatting",
+    "space separator",
+    "styled separator",
+    "thousands gap",
+    "format numbers"
+  ],
+  "author": "Arthur Papikian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arti911/thousand-gap/issues"
+  },
+  "homepage": "https://github.com/arti911/thousand-gap",
+  "description": "A library for formatting numbers with customizable thousand separators, allowing control over the spacing via styles to enhance number readability.",
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "typescript": "5.9.2"
+  }
+}
