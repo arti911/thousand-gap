@@ -4,9 +4,11 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "ci": "npm run build",
+    "ci": "npm run build && npm run check-format && npm run test",
     "format": "prettier --write .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "check-format": "prettier --check .",
+    "test": "vitest run",
+    "dev": "vitest"
   },
   "repository": {
     "type": "git",
@@ -36,7 +38,8 @@
   "homepage": "https://github.com/arti911/thousand-gap",
   "description": "A library for formatting numbers with customizable thousand separators, allowing control over the spacing via styles to enhance number readability.",
   "devDependencies": {
-    "prettier": "^3.6.2",
-    "typescript": "5.9.2"
+    "prettier": "3.6.2",
+    "typescript": "5.9.2",
+    "vitest": "3.2.4"
   }
 }
